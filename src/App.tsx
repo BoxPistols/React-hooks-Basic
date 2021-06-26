@@ -3,6 +3,7 @@ import { useState } from 'react'
 import './styles.scss'
 import Button from 'react-bootstrap/Button'
 import { CssModules } from './CssModules'
+import DogApi from './DogAPI'
 
 export default function App() {
   const [count, setCount] = useState(100)
@@ -15,8 +16,8 @@ export default function App() {
       <Button variant="success" onClick={() => setCount(count + 1)}>
         Button
       </Button>
-
       <CssModules />
+      <DogApi />
     </div>
   )
 }

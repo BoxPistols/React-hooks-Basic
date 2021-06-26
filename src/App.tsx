@@ -1,11 +1,11 @@
-import * as React from "react";
-import { useState } from "react";
-import "./styles.scss";
-import Button from "react-bootstrap/Button";
-import { CssModules } from "./CssModules";
+import * as React from 'react'
+import { useState } from 'react'
+import './styles.scss'
+import Button from 'react-bootstrap/Button'
+import { CssModules } from './CssModules'
 
 export default function App() {
-  const [count, setCount] = useState(100);
+  const [count, setCount] = useState(100)
   return (
     <div className="App">
       <h1>Hello CodeSandbox</h1>
@@ -18,5 +18,5 @@ export default function App() {
 
       <CssModules />
     </div>
-  );
+  )
 }

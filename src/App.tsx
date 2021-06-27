@@ -4,6 +4,7 @@ import './styles.scss'
 import Button from 'react-bootstrap/Button'
 import { CssModules } from './CssModules'
 import DogApi from './DogAPI'
+import { TsBase } from './TsBase'
 
 export default function App() {
   const [count, setCount] = useState(100)
@@ -18,6 +19,7 @@ export default function App() {
       </Button>
       <CssModules />
       <DogApi />
+      <TsBase />
     </div>
   )
 }

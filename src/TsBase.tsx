@@ -31,9 +31,29 @@ export const TsBase = () => {
     id: 1,
     name: 'Bob'
   }
+
+  // Calc test
+  const calcTotal = (num: number) => {
+    const total = num * 1.1
+    console.log(total)
+  }
+  const calcPush = () => calcTotal(1108)
+
+  // Calc test２
+  const totalFee = (num: number): number => {
+    let total: number = num * 1.1
+    // total = totalFee(2000)
+    return total
+  }
+  const feePush = (): void => {
+    console.log(totalFee(1000))
+  }
+  // View
   return (
     <div>
       <h2>TsBase</h2>
+      <button onClick={calcPush}>Push</button>
+      <button onClick={feePush}>feePush</button>
       <Lists>
         <List>{num}</List>
         <List>{arr.join(' ')}</List>

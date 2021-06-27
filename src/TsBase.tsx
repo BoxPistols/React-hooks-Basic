@@ -41,7 +41,8 @@ export const TsBase = () => {
 
   // Calc test２
   const totalFee = (num: number): number => {
-    let total: number = num * 1.1
+    type NewType = number
+    let total: NewType = num * 1.1
     // total = totalFee(2000)
     return total
   }
